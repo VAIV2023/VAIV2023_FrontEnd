@@ -2,11 +2,13 @@ import Navigator from "../components/Navigator";
 import Title from "../components/Title";
 import styled from "styled-components";
 import {useState} from "react";
+import { testAPI } from "../utils/fetch";
+import axios from "axios";
+
 
 const TopPickPageContainer = styled.div`
     display: flex;
     height: 100%;
-    
     flex-direction: column;
 `
 
@@ -21,8 +23,16 @@ const Testcontainer = styled.div`
     font-size: 2rem;
 `
 
+export interface testType {
+    result: string;
+};
+
+
+testAPI();
+
 
 function TopPickPage(){
+  
     return(
         <TopPickPageContainer>
             <Title/>

@@ -6,16 +6,11 @@ import skku_logo from "../assets/images/skku_logo.png";
 import vaiv_logo from "../assets/images/vaiv_logo.png";
 import React, {useState} from "react";
 
-
-
 declare global {
     interface Window {
       Kakao: any;
     }
 }
-
-
-
 
 const LoginBoxContainer = styled.div`
     display:flex;
@@ -33,7 +28,6 @@ const LogoContainer = styled.div`
     padding-bottom: 2.5vh;
 `
 
-
 const VaivImageContainer = styled.div`
     display:flex;
     height: 13vh;
@@ -41,16 +35,17 @@ const VaivImageContainer = styled.div`
     padding-top: 3vh;
     padding-bottom: 2vh;
 `
+
 const SkkuImageContainer = styled.div`
     display:flex;
     height: 4vh;
     padding-left:1vw;
     padding-top:1vh;
 `
+
 interface IKakaoImageContainer {
     isMouse: boolean;
 }
-
 
 const KakaoImageContainer = styled.div<IKakaoImageContainer>`
     display:flex;
@@ -61,7 +56,6 @@ const KakaoImageContainer = styled.div<IKakaoImageContainer>`
     cursor: pointer;
 
 `
-
 const KakaoBtnWrapper = styled.div`
     display: flex;
     height: 18vh;
