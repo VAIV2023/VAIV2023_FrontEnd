@@ -29,7 +29,7 @@ export interface testType {
 
 
 testAPI();
-
+axios.post("localhost:8000/user", {id : '1', name: 'kim'})
 
 function TopPickPage(){
   

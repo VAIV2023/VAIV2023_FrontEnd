@@ -4,7 +4,7 @@ import {useState} from "react";
 
 const PortpolioPageContainer = styled.div`
     display: flex;
-    height: 100vh;
+    height: 100%;
     background-color: green;
 `
 
