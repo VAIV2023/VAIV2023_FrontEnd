@@ -4,21 +4,20 @@ import LoginPage from "./pages/LoginPage";
 import TopPickPage from "./pages/TopPickPage";
 import PortfolioPage from "./pages/PortfolioPage";
 
-import { useRecoilValue } from "recoil";
+
+
 import { isLoggedInState } from "./atoms/LoginAtom";
 
-
-
 function AppRouter() {
-    return(
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<LoginPage />} />
-                <Route path="/toppick" element={<TopPickPage />} />
-                <Route path="/portfolio" element={<PortfolioPage />} />
-            </Routes>
-        </BrowserRouter>
-    );
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/toppick" element={<TopPickPage />} />
+        <Route path="/portfolio" element={<PortfolioPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default AppRouter;
