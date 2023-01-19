@@ -6,16 +6,18 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+
 import {
     SellStockType,
     HoldingStockType,
     AccountType,
     AccountJSON,
   } from "../types/user_info";
+const clr = "#90a4ae";
 
 const StyledTableCell = withStyles((theme) => ({
     head: {
-      backgroundColor: theme.palette.common.black,
+      backgroundColor: clr,
       color: theme.palette.common.white,
     },
     body: {

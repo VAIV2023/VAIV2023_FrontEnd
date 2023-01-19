@@ -62,7 +62,7 @@ const ProtfolioTextBox = styled.div<ITextBox>`
 
 
 const AnalysisTableContainer = styled.div`
-  width: 70vw;
+  width: 60vw;
   padding-top : 10vh;
   padding-bottom: 10vh;
 `;
