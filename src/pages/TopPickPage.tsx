@@ -8,7 +8,6 @@ import {useState, useMemo, useEffect} from "react";
 const TopPickPageContainer = styled.div`
     display: flex;
     height: 100%;
-    
     flex-direction: column;
 `
 
